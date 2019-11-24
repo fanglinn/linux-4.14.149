@@ -1,0 +1,18 @@
+#
+# Backlight && LCD && UVC device configuration
+#
+menu "drivers on tiny4412"
+	config BACKLIGHT
+	tristate "Backlight support"
+	default y  
+	help
+	  This is backlight driver for tiny4412 .
+	 
+	config LCD
+	tristate "LCD support"
+	depends on BACKLIGHT 
+	default y 
+	help
+	  This is LCD driver for tiny4412 . 
+	  
+endmenu

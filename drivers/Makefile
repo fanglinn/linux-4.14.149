@@ -6,6 +6,9 @@
 # Rewritten to use lists instead of if-statements.
 #
 
+obj-$(CONFIG_BACKLIGHT) 	+= tiny4412/
+obj-$(CONFIG_LCD)       	+= tiny4412/
+
 obj-y				+= irqchip/
 obj-y				+= bus/
 
